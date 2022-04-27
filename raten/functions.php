@@ -459,14 +459,19 @@ function my_scripts_method() {
 	wp_enqueue_script( 'jquery' );
 }    
 
-add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
-// add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний
-function theme_name_scripts() {
-   /* wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/styles.css', array(), '1.0.0');
-    wp_enqueue_style( 'response_1023', get_template_directory_uri() . '/css/response_1023.css', array(), '1.0.0', '(max-width: 1023px)');
-    wp_enqueue_style( 'response_767', get_template_directory_uri() . '/css/response_767.css', array(), '1.0.0', '(max-width: 767px)');
-    wp_enqueue_style( 'response_479', get_template_directory_uri() . '/css/response_479.css', array(), '1.0.0', '(max-width: 479px)');
-    wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/css/fancybox.css', array(), '1.0.0');*/
+add_action( 'wp_enqueue_scripts', 'planremonta' );
+// add_action('wp_print_styles', 'planremonta'); // можно использовать этот хук он более поздний
+function planremonta() {
+    wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/styles.css', array(), '1.0.0');
+    wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/css/fancybox.css', array(), '1.0.0');
+    // responde
+    wp_enqueue_style( 'response_1023', get_template_directory_uri() . '/css/response_1023.css', array(), '1.0.0', 'print (max-width: 1023px)');
+    wp_enqueue_style( 'response_767', get_template_directory_uri() . '/css/response_767.css', array(), '1.0.0', 'print (max-width: 767px)');
+    wp_enqueue_style( 'response_479', get_template_directory_uri() . '/css/response_479.css', array(), '1.0.0', 'print (max-width: 479px)');
+    // Sliders
+    wp_enqueue_style( 'swiper', get_template_directory_uri() . '/css/swiper.css', array(), '1.1.0');
+    wp_enqueue_style( 'swiper-bundle', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), '1.0.0');
+    wp_enqueue_style( 'ion-rangeSlider', get_template_directory_uri() . '/css/ion.rangeSlider.css', array(), '1.0.0');
 }
 
 

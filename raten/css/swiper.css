@@ -1,7 +1,7 @@
 .swiper-button-next,
 .swiper-button-prev
 {
-    color: #6100ff;
+    color: var(--main-color);
 
     top: auto;
     bottom: 30px;
@@ -58,8 +58,8 @@
 {
     color: #fff;
 
-    border-color: #6100ff;
-    background: #6100ff;
+    border-color: var(--main-color-h);
+    background: var(--main-color-h);
 }
 
 
@@ -113,7 +113,7 @@
     height: 6px;
 
     opacity: 1;
-    background: #6100ff;
+    background: var(--main-color-h);
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet

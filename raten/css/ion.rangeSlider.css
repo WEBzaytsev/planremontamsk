@@ -38,7 +38,7 @@
 
     height: 3px;
 
-    background: #6100ff;
+    background: var(--main-color);
 }
 
 
