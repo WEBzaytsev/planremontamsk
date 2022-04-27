@@ -1,0 +1,254 @@
+/*
+Theme Name: New-RaTeN
+Theme URI: http://www.free-lance.ru/users/RaTeN
+Author: RaTeN
+Author URI: http://www.free-lance.ru/users/RaTeN
+Description: Freelance RaTeN 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: all-in
+Text Domain: RaTeN
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+form input.error{
+  border:1px solid red !important;
+    padding: 20px 54px;
+}
+.menu-item-has-children{
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+        background: #FFFFFF;
+    padding: 22px 20px 33px;
+    box-shadow: 0px 4px 55px rgb(0 0 0 / 15%);
+    border: none;
+    border-radius: 0;
+    transform: translate3d(-130px, 60px, 0px) !important;
+    max-width: 320px;
+}
+
+
+.sub-menu.show {
+    display: block;
+        margin: 0px;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    transform: translate(0px, 30px);
+}
+
+.sub-menu li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.sub-menu li a {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    position: relative;
+
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+    display: flex;
+    font-weight: bold;
+}
+
+.sub-menu li a:focus, .sub-menu li a:hover, .sub-menu li a:hover{
+    background: transparent;
+    color: #D2281E;
+}
+
+.sub-menu li a:hover:after{
+    display: none;
+}
+
+.menu-item-has-children > a > i{    
+    display: block;
+    width: 14px;
+    height:9px;
+    background: url(img/ar-down.svg);
+    margin-left: 9px;
+}
+
+@media screen and (max-width: 1199px)
+{
+    .sub-menu {
+        transform: translate3d(-130px, 44px, 0px) !important;
+    }
+
+    .nav__menu li a {
+        margin-right: 25px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    .sub-menu {
+        max-width: 343px;        
+        left: 50% !important;
+
+    }
+
+    .nav__menu li a {
+        font-size: 19px;
+        margin: 15px 0;
+    }
+
+    .sub-menu li a {
+        font-size: 18px;
+        margin: 0;
+    }
+
+}
+
+
+.text-wrap p{
+    margin-bottom:30px;
+}
+
+.text-wrap h2, .text-wrap h3{
+    margin-bottom:20px;
+}
+
+
+.text-wrap .aligncenter,
+.text-wrap div.aligncenter {
+    display: block;
+    margin: 5px auto
+}
+
+.text-wrap .alignright {
+    float: right;
+    margin: 20px 0 20px 20px
+}
+
+.text-wrap .alignleft {
+    float: left;
+    margin: 20px 20px 20px 0
+}
+
+.text-wrap a img.alignright {
+    float: right;
+    margin: 20px 0 20px 20px
+}
+
+.text-wrap a img.alignnone {
+    margin: 20px 20px 20px 0
+}
+
+.text-wrap a img.alignleft {
+    float: left;
+    margin: 20px 20px 20px 0
+}
+
+.text-wrap a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.text-wrap .wp-caption {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center
+}
+
+.text-wrap .wp-caption.alignnone {
+    margin: 20px 20px 20px 0
+}
+
+.text-wrap .wp-caption.alignleft {
+    margin: 20px 20px 20px 0
+}
+
+.text-wrap .wp-caption.alignright {
+    margin: 20px 0 20px 20px
+}
+
+.text-wrap .wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto
+}
+
+.text-wrap .wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px
+}
+
+.text-wrap img {
+    max-width: 100%;
+    height: auto
+}
+
+.text-wrap iframe {
+    max-width: 100%
+}
+
+.team-modal .modal__photo img{
+    height:auto;
+}
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    z-index: 10000;
+}
+#thx {
+    background: #fff;
+    position: absolute;
+    padding: 30px;
+    right: 0;
+    bottom: 0;
+    font-size: 23px;
+}
