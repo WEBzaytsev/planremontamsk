@@ -91,7 +91,7 @@ $(() => {
 	}
 
 	Fancybox.defaults.template = {
-		closeButton: '<svg><use xlink:href="https://planremontamsk.ru/wp-content/themes/raten/images/sprite.svg#ic_close"></use></svg>',
+		closeButton: '<svg><use xlink:href="/wp-content/themes/raten/images/sprite.svg#ic_close"></use></svg>',
 	}
 
 	// Всплывающие окна

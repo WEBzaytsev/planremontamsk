@@ -5126,7 +5126,7 @@ footer .socials .instagram_link .icon
 
 .parsley-errors-list.filled {
     padding: 5px 10px;
-    background: var(--amber);
+    background: var(--amber_error);
     position: absolute;
     color: #fff;
     top: -webkit-calc(100% + 10px);
@@ -5144,7 +5144,7 @@ footer .socials .instagram_link .icon
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: transparent transparent var(--amber);
+    border-color: transparent transparent var(--amber_error);
     border-width: 5px;
     margin-left: -5px
 }
