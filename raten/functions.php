@@ -445,19 +445,31 @@ function classic_smilies_init() {
 // }
 
 
-// add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-// function my_scripts_method() {
-// 	// отменяем зарегистрированный jQuery
-// 	wp_deregister_script('jquery-core');
-// 	wp_deregister_script('jquery');
+add_action( 'wp_enqueue_scripts', 'planremonta_scripts' );
+function planremonta_scripts() {
+	// отменяем зарегистрированный jQuery
+	wp_deregister_script('jquery-core');
+	wp_deregister_script('jquery');
+	// регистрируем
+	wp_register_script('jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js', false, null, true);
+	wp_register_script('jquery', false, array('jquery-core'), null, true);
+	// подключаем
+	wp_enqueue_script( 'jquery' );
 
-// 	// регистрируем
-// 	wp_register_script('jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', false, null, true);
-// 	wp_register_script('jquery', false, array('jquery-core'), null, true);
+  // Other site scripts
+  wp_enqueue_script('newscript', get_template_directory_uri() . '/js/lozad.min.js');
+  wp_enqueue_script('lozad', get_template_directory_uri() . '/js/swiper-bundle.min.js');
+  wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/js/inputmask.min.js');
+  wp_enqueue_script('inputmask', get_template_directory_uri() . '/js/nice-select.js');
+  wp_enqueue_script('nice-select', get_template_directory_uri() . '/js/ion.rangeSlider.min.js');
+  wp_enqueue_script('ion-rangeSlider', get_template_directory_uri() . '/js/fancybox.min.js');
+  wp_enqueue_script('fancybox.min.js', get_template_directory_uri() . '/js/parsley.min.js');
+  wp_enqueue_script('parsley', get_template_directory_uri() . '/js/functions.js');
+  wp_enqueue_script('functions', get_template_directory_uri() . '/js/scripts.js');
+  // wp_enqueue_script('scripts', get_template_directory_uri() . '/js/custom_script.js');
+  
 
-// 	// подключаем
-// 	wp_enqueue_script( 'jquery' );
-// }    
+}    
 
 add_action( 'wp_enqueue_scripts', 'planremonta' );
 // add_action('wp_print_styles', 'planremonta'); // можно использовать этот хук он более поздний
@@ -465,9 +477,9 @@ function planremonta() {
     wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/styles.css', array(), '1.0.0');
     wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/css/fancybox.css', array(), '1.0.0');
     // responde
+    wp_enqueue_style( 'response_1217', get_template_directory_uri() . '/css/response_1217.css', array(), '1.0.0', 'print (max-width: 1217px)');
     wp_enqueue_style( 'response_1023', get_template_directory_uri() . '/css/response_1023.css', array(), '1.0.0', 'print (max-width: 1023px)');
     wp_enqueue_style( 'response_767', get_template_directory_uri() . '/css/response_767.css', array(), '1.0.0', 'print (max-width: 767px)');
-    wp_enqueue_style( 'response_479', get_template_directory_uri() . '/css/response_479.css', array(), '1.0.0', 'print (max-width: 479px)');
     // Sliders
     wp_enqueue_style( 'swiper', get_template_directory_uri() . '/css/swiper.css', array(), '1.1.0');
     wp_enqueue_style( 'swiper-bundle', get_template_directory_uri() . '/css/swiper-bundle.min.css', array('swiper'), '1.0.0');
