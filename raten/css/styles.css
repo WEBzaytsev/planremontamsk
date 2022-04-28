@@ -128,7 +128,7 @@ input[type=number]
     --font_family: 'Montserrat', 'Arial', sans-serif;
     --main-color: #1982C4;
     --main-color-h:#1c6491;
-    --alice-blue:#EDF2FB, #181818;
+    --alice-blue:#EDF2FB; /* old #181818 */
     --amber_error:#FFBF00;
     --green_check:#2BA84A;
 }
