@@ -32,7 +32,7 @@
 
             <div class="manager">
                 <div class="photo">
-                    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/manager_photo.jpg" alt="" class="lozad">
+                    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/manager_photo.jpg" alt="" class="lozad">
                 </div>
 
                 <div>
@@ -61,7 +61,7 @@
                             <option value="Другое">Другое</option>
                         </select>
 
-                        <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                        <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
                             <option value="Другое">Другое</option>
                         </select>
 
-                        <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                        <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                     </div>
                 </div>
 
@@ -91,7 +91,7 @@
                             <option value="Вторичка">Вторичка</option>
                         </select>
 
-                        <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                        <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                     </div>
                 </div>
 
@@ -131,7 +131,7 @@
         </div>
     </div>
 
-    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/bg_first_section.jpg" alt="" class="bg lozad">
+    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/bg_first_section.jpg" alt="" class="bg lozad">
 </section>
 
 
@@ -147,21 +147,21 @@
 
                 <div class="item">
                     <div class="icon">
-                        <img data-src="<?php bloginfo('template_url'); ?>/images/ic_you_get1.svg" alt="" class="lozad">
+                        <img data-src="<?php echo get_template_directory_uri();?>/images/ic_you_get1.svg" alt="" class="lozad">
                     </div>
                     <div>Стоимость ремонта квартиры<br> <b>по вашим параметрам</b></div>
                 </div>
 
                 <div class="item">
                     <div class="icon">
-                        <img data-src="<?php bloginfo('template_url'); ?>/images/ic_you_get2.svg" alt="" class="lozad">
+                        <img data-src="<?php echo get_template_directory_uri();?>/images/ic_you_get2.svg" alt="" class="lozad">
                     </div>
                     <div>Пример сметы <b>на ремонт<br> квартиры</b></div>
                 </div>
 
                 <div class="item">
                     <div class="icon">
-                        <img data-src="<?php bloginfo('template_url'); ?>/images/ic_you_get3.svg" alt="" class="lozad">
+                        <img data-src="<?php echo get_template_directory_uri();?>/images/ic_you_get3.svg" alt="" class="lozad">
                     </div>
                     <div>Дизайн-проект<br> <b>в подарок</b></div>
                 </div>
@@ -171,7 +171,7 @@
         </div>
     </div>
 
-    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/bg_first_section.jpg" alt="" class="bg lozad">
+    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/bg_first_section.jpg" alt="" class="bg lozad">
 </section> -->
 
 <!-- Marquiz script start -->

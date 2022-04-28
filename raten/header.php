@@ -27,15 +27,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
-		<!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper-bundle.min.css">
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper.css">
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ion.rangeSlider.css"> -->
-		<!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/fancybox.css"> -->
-		<!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css"> -->
+		<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/swiper.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/ion.rangeSlider.css"> -->
+		<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/fancybox.css"> -->
+		<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/styles.css"> -->
 
-		<!-- <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/response_1217.css" media="print, (max-width: 1217px)">
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/response_1023.css" media="print, (max-width: 1023px)">
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/response_767.css" media="print, (max-width: 767px)"> -->
+		<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/response_1217.css" media="print, (max-width: 1217px)">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/response_767.css" media="print, (max-width: 767px)"> -->
 		<?php wp_head(); ?>
 		<!-- Marquiz script start -->
 		<script>
@@ -91,7 +91,7 @@
 					<div class="info">
 						<div class="cont row">
 							<a href="<?php bloginfo('siteurl'); ?>" class="logo">
-								<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="">
 								<div>Ремонт помещений<br> в Москве и области<br> под ключ</div>
 							</a>
 
@@ -99,7 +99,7 @@
 								<div class="time">Ежедневно с 9 00 до 21 00</div>
 
 								<div class="number">
-									<svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_phone"></use></svg>
+									<svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_phone"></use></svg>
 									<a href="tel:<?php echo edit_phone(get_field("phone", "option")); ?>"><?php the_field("phone", "option") ?></a>
 								</div>
 							</div>

@@ -14,7 +14,7 @@ Template Name: Главная
 
             <div class="manager">
                 <div class="photo">
-                    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/manager_photo.jpg" alt="" class="lozad">
+                    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/manager_photo.jpg" alt="" class="lozad">
                 </div>
 
                 <div>
@@ -67,7 +67,7 @@ Template Name: Главная
                             <option value="Другое">Другое</option>
                         </select>
 
-                        <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                        <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@ Template Name: Главная
                             <option value="Другое">Другое</option>
                         </select>
 
-                        <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                        <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                     </div>
                 </div>
 
@@ -97,7 +97,7 @@ Template Name: Главная
                             <option value="Вторичка">Вторичка</option>
                         </select>
 
-                        <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                        <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@ Template Name: Главная
         </div>
     </div>
 
-    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/bg_first_section.jpg" alt="" class="bg lozad">
+    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/bg_first_section.jpg" alt="" class="bg lozad">
 </section>
 
 
@@ -168,7 +168,7 @@ Template Name: Главная
 <section class="plan" id="plan">
     <div class="cont row">
         <div class="image">
-            <img src="<?php bloginfo('template_url'); ?>/images/plan_img.png" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/images/plan_img.png" alt="">
         </div>
 
         <div class="data">
@@ -186,7 +186,7 @@ Template Name: Главная
                         <img data-src="<?php echo $icon; ?>" alt="" class="lozad">
 
                         <div class="check">
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                         </div>
                     </div>
 
@@ -205,7 +205,7 @@ Template Name: Главная
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/images/plan_bg_text.svg" alt="" class="lozad bg_text">
+    <img src="<?php echo get_template_directory_uri();?>/images/plan_bg_text.svg" alt="" class="lozad bg_text">
 </section>
 
 
@@ -247,7 +247,7 @@ Template Name: Главная
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/images/quality_control_bg_text.svg" alt="" class="lozad bg_text">
+    <img src="<?php echo get_template_directory_uri();?>/images/quality_control_bg_text.svg" alt="" class="lozad bg_text">
 </section>
 
 
@@ -281,7 +281,7 @@ Template Name: Главная
                         <?php $k=0; if($spisok_rabot) { foreach ($spisok_rabot as $value) { $k++;?>   
                         <div class="item">
                             <div class="work <?php if($k==1) {echo "active";} ?>" >
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_arrow_right"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_arrow_right"></use></svg>
                                 <span><?php echo $value["name"]; ?></span>
                             </div>
 
@@ -311,7 +311,7 @@ Template Name: Главная
                     <a href="#popup:marquiz_61cbf15bc0b41d003feb2432" class="btn">Рассчитать</a>
 
                     <a href="https://wa.me/79260123881?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%A3%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0" class="btn white">
-                        <img src="<?php bloginfo('template_url'); ?>/images/ic_whatsapp.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/images/ic_whatsapp.png" alt="">
                         <span>Написать в WhatsApp и обсудить проект</span>
                     </a>
                 </div>
@@ -319,17 +319,17 @@ Template Name: Главная
 
             <div class="manager">
                 <div class="photo">
-                    <img src="<?php bloginfo('template_url'); ?>/images/tmp/manager_photo2.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/images/tmp/manager_photo2.png" alt="">
                 </div>
 
                 <div class="message"><b>Привет, меня зовут Ярослав</b><br> Давайте узнаем стоимость Вашего ремонта в компании</div>
             </div>
 
-            <img data-src="<?php bloginfo('template_url'); ?>/images/tariffs_bg_text.svg" alt="" class="lozad bg_text">
+            <img data-src="<?php echo get_template_directory_uri();?>/images/tariffs_bg_text.svg" alt="" class="lozad bg_text">
         </div>
     </div>
 
-    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/bg_tariffs.png" alt="" class="bg lozad">
+    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/bg_tariffs.png" alt="" class="bg lozad">
 </section>
 
 
@@ -367,11 +367,11 @@ Template Name: Главная
                         <div class="name"><?php echo $name; ?></div>
 
                         <div class="rating">
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
                         </div>
 
                         <div class="features">
@@ -401,11 +401,11 @@ Template Name: Главная
                                 </div>
 
                                 <div class="swiper-button-prev">
-                                    <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                                    <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
                                 </div>
 
                                 <div class="swiper-button-next">
-                                    <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                                    <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
                                 </div>
                             </div>
                         </div>
@@ -457,11 +457,11 @@ Template Name: Главная
                         <div class="name"><?php echo $name; ?></div>
 
                         <div class="rating">
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_star"></use></svg>
                         </div>
 
                         <div class="features">
@@ -491,11 +491,11 @@ Template Name: Главная
                                 </div>
 
                                 <div class="swiper-button-prev">
-                                    <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                                    <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
                                 </div>
 
                                 <div class="swiper-button-next">
-                                    <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                                    <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
                                 </div>
                             </div>
                         </div>
@@ -523,14 +523,14 @@ Template Name: Главная
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/images/portfolio_bg_text.svg" alt="" class="lozad bg_text">
+    <img src="<?php echo get_template_directory_uri();?>/images/portfolio_bg_text.svg" alt="" class="lozad bg_text">
 </section>
 
 
 <section class="credit">
     <div class="cont row">
         <div class="image">
-            <img src="<?php bloginfo('template_url'); ?>/images/tmp/credit_img.png" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/images/tmp/credit_img.png" alt="">
 
             <div class="text">
                 <p>План Ремонта не оказывает финансовые и Банковские услуги самостоятельно. Услуги по предоставлению кредита или рассрочки предоставляются Банками РФ в соответствии с законодательством РФ. Условия предоставления рассрочки без процентов или кредитные условия индивидуально рассчитываются банками исходя из требований законодательства, документов и иных условий.</p>
@@ -551,28 +551,28 @@ Template Name: Главная
             <div class="pluses">
                 <div>
                     <div class="icon">
-                        <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                        <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                     </div>
                     <span>Без первоначального взноса</span>
                 </div>
 
                 <div>
                     <div class="icon">
-                        <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                        <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                     </div>
                     <span>Незаметно для семейного бюджета</span>
                 </div>
 
                 <div>
                     <div class="icon">
-                        <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                        <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                     </div>
                     <span>Оформление в офисе за 20 минут</span>
                 </div>
 
                 <div>
                     <div class="icon">
-                        <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                        <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                     </div>
                     <span>Сроком до 12 месяцев</span>
                 </div>
@@ -580,7 +580,7 @@ Template Name: Главная
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/images/credit_bg_text.svg" alt="" class="lozad bg_text">
+    <img src="<?php echo get_template_directory_uri();?>/images/credit_bg_text.svg" alt="" class="lozad bg_text">
 </section>
 
 
@@ -615,18 +615,18 @@ Template Name: Главная
             </div>
 
             <div class="swiper-button-prev">
-                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
             </div>
 
             <div class="swiper-button-next">
-                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
             </div>
 
             <div class="swiper-pagination"></div>
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/images/bonuses_bg_text.svg" alt="" class="lozad bg_text">
+    <img src="<?php echo get_template_directory_uri();?>/images/bonuses_bg_text.svg" alt="" class="lozad bg_text">
 </section>
 
 
@@ -663,7 +663,7 @@ Template Name: Главная
                             <div class="object_name"><?php echo $nazvanie; ?></div>
 
                             <div class="location">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_location"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_location"></use></svg>
                                 <span><?php echo $adres; ?></span>
                             </div>
 
@@ -690,11 +690,11 @@ Template Name: Главная
             </div>
 
             <div class="swiper-button-prev">
-                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
             </div>
 
             <div class="swiper-button-next">
-                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
             </div>
         </div>
 
@@ -710,7 +710,7 @@ Template Name: Главная
                 </div>
 
                 <div class="photo">
-                    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/manager_photo2.jpg" alt="" class="lozad">
+                    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/manager_photo2.jpg" alt="" class="lozad">
                 </div>
 
                 <div>
@@ -719,7 +719,7 @@ Template Name: Главная
                 </div>
             </div>
 
-            <img src="<?php bloginfo('template_url'); ?>/images/confidence_bg_text.svg" alt="" class="lozad bg_text">
+            <img src="<?php echo get_template_directory_uri();?>/images/confidence_bg_text.svg" alt="" class="lozad bg_text">
         </div>
 
 
@@ -747,7 +747,7 @@ Template Name: Главная
                                 <option value="Новомосковский административный округ">Новомосковский административный округ</option>
                             </select>
 
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                         </div>
                     </div>
 
@@ -763,7 +763,7 @@ Template Name: Главная
                                 <option value="Чистовая отделка">Чистовая отделка</option>
                             </select>
 
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                         </div>
                     </div>
 
@@ -794,24 +794,24 @@ Template Name: Главная
                 </div>
 
                 <div class="swiper-button-prev">
-                    <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                    <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
                 </div>
 
                 <div class="swiper-button-next">
-                    <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_slider_arrow"></use></svg>
+                    <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_slider_arrow"></use></svg>
                 </div>
             </div>
         </div>
     </div>
 
-    <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/bg_objects.jpg" alt="" class="bg lozad">
+    <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/bg_objects.jpg" alt="" class="bg lozad">
 </section>
 
 
 <section class="guarantees" id="guarantees">
     <div class="cont row">
         <div class="image">
-            <img src="<?php bloginfo('template_url'); ?>/images/tmp/guarantees_img.png" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/images/tmp/guarantees_img.png" alt="">
         </div>
 
         <div class="data">
@@ -824,7 +824,7 @@ Template Name: Главная
 
             <!-- <div class="download_link">
                 <a href="/">
-                    <img src="<?php bloginfo('template_url'); ?>/images/ic_pdf.svg" alt="" class="icon">
+                    <img src="<?php echo get_template_directory_uri();?>/images/ic_pdf.svg" alt="" class="icon">
                     <span>Свидетельство СРО</span>
                 </a>
             </div> -->
@@ -838,7 +838,7 @@ Template Name: Главная
         </div>
     </div>
 
-    <img src="<?php bloginfo('template_url'); ?>/images/guarantees_bg_text.svg" alt="" class="lozad bg_text">
+    <img src="<?php echo get_template_directory_uri();?>/images/guarantees_bg_text.svg" alt="" class="lozad bg_text">
 </section>
 
 
@@ -848,7 +848,7 @@ Template Name: Главная
             <div class="title">Команда</div>
         </div>
 
-        <img src="<?php bloginfo('template_url'); ?>/images/tmp/team_img.png" alt="">
+        <img src="<?php echo get_template_directory_uri();?>/images/tmp/team_img.png" alt="">
     </div>
 </section>
 <style>

@@ -4,17 +4,17 @@
                             <div class="block_title">Контакты</div>
 
                             <div class="item location">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_location"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_location"></use></svg>
                                 <span><?php the_field("adres", "option") ?></span>
                             </div>
 
                             <div class="item phone">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_phone"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_phone"></use></svg>
                                 <a href="tel:<?php echo edit_phone(get_field("phone", "option")); ?>"><?php the_field("phone", "option") ?></a>
                             </div>
 
                             <div class="item email">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_email"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_email"></use></svg>
                                 <a href="mailto:<?php the_field("email", "option") ?>"><?php the_field("email", "option") ?></a>
                             </div>
 
@@ -36,15 +36,15 @@
 
                         <div class="socials">
                             <a href="<?php the_field("vk", "option") ?>" target="_blank" rel="noopener nofollow" class="vkontakte_link">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_vkontakte"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_vkontakte"></use></svg>
                             </a>
 
                             <!--<a href="<?php the_field("fb", "option") ?>" target="_blank" rel="noopener nofollow" class="facebook_link">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_facebook"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_facebook"></use></svg>
                             </a>
 
                             <a href="<?php the_field("inst", "option") ?>" target="_blank" rel="noopener nofollow" class="instagram_link">
-                                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_instagram"></use></svg>
+                                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_instagram"></use></svg>
                             </a>-->
                         </div>
                     </div>
@@ -63,10 +63,10 @@
 
         <section class="modal" id="free_measurement_modal">
             <button class="close_btn">
-                <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_close"></use></svg>
+                <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_close"></use></svg>
             </button>
 
-            <img src="<?php bloginfo('template_url'); ?>/images/tmp/free_measurement_img.png" alt="" class="img">
+            <img src="<?php echo get_template_directory_uri();?>/images/tmp/free_measurement_img.png" alt="" class="img">
 
             <div class="data">
                 <div class="title">Запишитесь<br> на бесплатный замер</div>
@@ -74,21 +74,21 @@
                 <div class="pluses">
                     <div>
                         <div class="icon">
-                            <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                            <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                         </div>
                         <span>Выезжаем в выходные дни</span>
                     </div>
 
                     <div>
                         <div class="icon">
-                            <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                            <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                         </div>
                         <span>Замер ни к чему не обязывает</span>
                     </div>
 
                     <div>
                         <div class="icon">
-                            <svg><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_check"></use></svg>
+                            <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                         </div>
                         <span>Точно просчитаем стоимость работ, материалов и сроки ремонта</span>
                     </div>
@@ -126,7 +126,7 @@
                                 <option value="Другое">Другое</option>
                             </select>
 
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                         </div>
                     </div>
 
@@ -141,7 +141,7 @@
                                 <option value="4">4</option>
                             </select>
 
-                            <svg class="icon"><use xlink:href="<?php bloginfo('template_url'); ?>/images/sprite.svg#ic_select_arrow"></use></svg>
+                            <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_select_arrow"></use></svg>
                         </div>
                     </div>
 
@@ -169,7 +169,7 @@
                 </form>
             </div>
 
-            <img data-src="<?php bloginfo('template_url'); ?>/images/tmp/bg_calc_modal.jpg" alt="" class="bg lozad">
+            <img data-src="<?php echo get_template_directory_uri();?>/images/tmp/bg_calc_modal.jpg" alt="" class="bg lozad">
         </section>
 
 
@@ -218,16 +218,16 @@
 
         <!-- Подключение javascript файлов -->
         <?php wp_footer(); ?>  
-        <script src="<?php bloginfo('template_url'); ?>/js/jquery-3.5.0.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/lozad.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/swiper-bundle.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/inputmask.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/nice-select.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/ion.rangeSlider.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/fancybox.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/parsley.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/jquery-3.5.0.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/lozad.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/swiper-bundle.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/inputmask.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/nice-select.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/ion.rangeSlider.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/fancybox.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/parsley.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/functions.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/scripts.js"></script>
 
         <!-- Яндекс карты -->
         <script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
