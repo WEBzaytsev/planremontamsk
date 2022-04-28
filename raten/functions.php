@@ -421,43 +421,43 @@ function classic_smilies_init() {
 	add_filter( 'smilies_src', 'classic_smilies_src', 10, 2 );
  
 // Отключаем загрузку скриптов и стилей Emoji
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
-remove_action( 'admin_print_styles', 'print_emoji_styles' );	
-remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );	
-remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-add_filter( 'tiny_mce_plugins', 'classic_smilies_rm_tinymce_emoji' );
-add_filter( 'the_content', 'classic_smilies_rm_additional_styles', 11 );
-add_filter( 'the_excerpt', 'classic_smilies_rm_additional_styles', 11 );
-add_filter( 'comment_text', 'classic_smilies_rm_additional_styles', 21 );
+// remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+// remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+// remove_action( 'wp_print_styles', 'print_emoji_styles' );
+// remove_action( 'admin_print_styles', 'print_emoji_styles' );	
+// remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+// remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );	
+// remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+// add_filter( 'tiny_mce_plugins', 'classic_smilies_rm_tinymce_emoji' );
+// add_filter( 'the_content', 'classic_smilies_rm_additional_styles', 11 );
+// add_filter( 'the_excerpt', 'classic_smilies_rm_additional_styles', 11 );
+// add_filter( 'comment_text', 'classic_smilies_rm_additional_styles', 21 );
 }
  
 // Отключаем Emoji в визуальном редакторе TinyMCE
-function classic_smilies_rm_tinymce_emoji( $plugins ) {
-	return array_diff( $plugins, array( 'wpemoji' ) );
-}
+// function classic_smilies_rm_tinymce_emoji( $plugins ) {
+// 	return array_diff( $plugins, array( 'wpemoji' ) );
+// }
  
 // Убираем размеры смайликов равные 1em (новые задаются для класса .wp-smiley)
-function classic_smilies_rm_additional_styles( $content ) {
-	return str_replace( 'class="wp-smiley" style="height: 1em; max-height: 1em;"', 'class="wp-smiley"', $content );
-}
+// function classic_smilies_rm_additional_styles( $content ) {
+// 	return str_replace( 'class="wp-smiley" style="height: 1em; max-height: 1em;"', 'class="wp-smiley"', $content );
+// }
 
 
-add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-function my_scripts_method() {
-	// отменяем зарегистрированный jQuery
-	wp_deregister_script('jquery-core');
-	wp_deregister_script('jquery');
+// add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+// function my_scripts_method() {
+// 	// отменяем зарегистрированный jQuery
+// 	wp_deregister_script('jquery-core');
+// 	wp_deregister_script('jquery');
 
-	// регистрируем
-	wp_register_script('jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', false, null, true);
-	wp_register_script('jquery', false, array('jquery-core'), null, true);
+// 	// регистрируем
+// 	wp_register_script('jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', false, null, true);
+// 	wp_register_script('jquery', false, array('jquery-core'), null, true);
 
-	// подключаем
-	wp_enqueue_script( 'jquery' );
-}    
+// 	// подключаем
+// 	wp_enqueue_script( 'jquery' );
+// }    
 
 add_action( 'wp_enqueue_scripts', 'planremonta' );
 // add_action('wp_print_styles', 'planremonta'); // можно использовать этот хук он более поздний
@@ -470,7 +470,7 @@ function planremonta() {
     wp_enqueue_style( 'response_479', get_template_directory_uri() . '/css/response_479.css', array(), '1.0.0', 'print (max-width: 479px)');
     // Sliders
     wp_enqueue_style( 'swiper', get_template_directory_uri() . '/css/swiper.css', array(), '1.1.0');
-    wp_enqueue_style( 'swiper-bundle', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), '1.0.0');
+    wp_enqueue_style( 'swiper-bundle', get_template_directory_uri() . '/css/swiper-bundle.min.css', array('swiper'), '1.0.0');
     wp_enqueue_style( 'ion-rangeSlider', get_template_directory_uri() . '/css/ion.rangeSlider.css', array(), '1.0.0');
 }
 
