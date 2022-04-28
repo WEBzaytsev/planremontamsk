@@ -32,7 +32,7 @@
             <footer>
                 <div class="info">
                     <div class="cont row">
-                        <div class="copyright">&copy; 2021 План-ремонта</div>
+                        <div class="copyright">&copy; 2021 План-ремонта <br>ОГРН 1217700072567</div>
 
                         <div class="socials">
                             <a href="<?php the_field("vk", "option") ?>" target="_blank" rel="noopener nofollow" class="vkontakte_link">
