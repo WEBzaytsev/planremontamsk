@@ -613,12 +613,12 @@ header .menu > * + *
 header .menu .btn
 {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
 
     display: flex;
 
-    min-height: 40px;
+    min-height: 50px;
 
     text-align: center;
     text-decoration: none;

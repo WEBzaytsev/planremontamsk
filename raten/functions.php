@@ -466,9 +466,6 @@ function planremonta_scripts() {
   wp_enqueue_script('fancybox.min.js', get_template_directory_uri() . '/js/parsley.min.js');
   wp_enqueue_script('parsley', get_template_directory_uri() . '/js/functions.js');
   wp_enqueue_script('functions', get_template_directory_uri() . '/js/scripts.js');
-  // wp_enqueue_script('scripts', get_template_directory_uri() . '/js/custom_script.js');
-  
-
 }    
 
 add_action( 'wp_enqueue_scripts', 'planremonta' );

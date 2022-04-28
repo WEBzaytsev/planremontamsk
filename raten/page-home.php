@@ -842,7 +842,7 @@ Template Name: Главная
 </section>
 
 
-<section class="team" id="team">
+<!-- <section class="team" id="team">
     <div class="cont">
         <div class="block_head center">
             <div class="title">Команда</div>
@@ -850,7 +850,7 @@ Template Name: Главная
 
         <img src="<?php echo get_template_directory_uri();?>/images/tmp/team_img.png" alt="">
     </div>
-</section>
+</section> -->
 <style>
     @media print, (max-width: 767px)
     {

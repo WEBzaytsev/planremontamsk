@@ -466,7 +466,7 @@ const initMap = () => {
 		// Кастомный маркер
 		let myPlacemark = new ymaps.Placemark([55.685290, 37.628828], {}, {
 			iconLayout: 'default#image',
-			iconImageHref: 'https://planremontamsk.ru/wp-content/themes/raten/images/ic_map_marker.png',
+			iconImageHref: '/wp-content/themes/raten/images/ic_map_marker.png',
 			iconImageSize: [48, 64],
 			iconImageOffset: [-24, -32]
 		})

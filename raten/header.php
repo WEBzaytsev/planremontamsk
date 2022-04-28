@@ -82,7 +82,7 @@
 								<!-- <button class="btn scroll_btn" data-anchor="#confidence">Траст</button> -->
 								<button class="btn scroll_btn" data-anchor="#objects">Процесс работы</button>
 								<button class="btn scroll_btn" data-anchor="#guarantees">Гарантии</button>
-								<button class="btn scroll_btn" data-anchor="#team">Команда</button>
+								<!-- <button class="btn scroll_btn" data-anchor="#team">Команда</button> -->
 								<button class="btn scroll_btn" data-anchor="#contacts_info">Контакты</button>
 							</nav>
 						</div>
