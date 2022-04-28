@@ -92,7 +92,7 @@
 						<div class="cont row">
 							<a href="<?php bloginfo('siteurl'); ?>" class="logo">
 								<img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="">
-								<div>Ремонт помещений<br> в Москве и области<br> под ключ</div>
+								<div>Лучшая компания по ремонту<br> квартир по версии<br> Российского Строительного Олимпа</div>
 							</a>
 
 							<div class="phone">
