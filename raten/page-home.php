@@ -322,7 +322,7 @@ Template Name: Главная
                     <img src="<?php echo get_template_directory_uri();?>/images/tmp/manager_photo2.png" alt="">
                 </div>
 
-                <div class="message"><b>Привет, меня зовут Ярослав</b><br> Давайте узнаем стоимость Вашего ремонта в компании</div>
+                <div class="message"><b>Здравствуйте, меня зовут Ярослав</b><br> Давайте узнаем стоимость Вашего ремонта в компании</div>
             </div>
 
             <img data-src="<?php echo get_template_directory_uri();?>/images/tariffs_bg_text.svg" alt="" class="lozad bg_text">

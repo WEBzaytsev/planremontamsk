@@ -76,15 +76,15 @@
                         <div class="icon">
                             <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                         </div>
-                        <span>Выезжаем в выходные дни</span>
+                        <span>Выезжаем в любой день</span>
                     </div>
 
-                    <div>
+                    <!-- <div>
                         <div class="icon">
                             <svg><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_check"></use></svg>
                         </div>
                         <span>Замер ни к чему не обязывает</span>
-                    </div>
+                    </div> -->
 
                     <div>
                         <div class="icon">
@@ -250,6 +250,25 @@
 
   gtag('config', 'UA-216661244-3');
 </script>
+
+ 
+ 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+   ym(88641339, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/88641339" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+ 
 <!-- Meta Pixel Code -->
 <!-- <script>
   !function(f,b,e,v,n,t,s)
