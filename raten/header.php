@@ -10,11 +10,16 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-		<!-- Изменение цвета панели моб. браузера -->
-		<meta name="msapplication-TileColor" content="#6100FF">
-		<meta name="theme-color" content="#6100FF">
-		
-		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
+		<!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri();?> /favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_template_directory_uri();?>/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo get_template_directory_uri();?>/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri();?>/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri();?>/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 		<!-- Подключение шрифтов с гугла -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
