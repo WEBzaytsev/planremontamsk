@@ -32,7 +32,7 @@
             <footer>
                 <div class="info">
                     <div class="cont row">
-                        <div class="copyright">&copy; 2021 План-ремонта <br>ОГРН 1217700072567</div>
+                        <div class="copyright">&copy; 2021 План-ремонта <br>ОГРН 1217700072567 <br> <a href="/politika-v-otnoshenii-obrabotki-personalnyh-dannyh/" target="_blank" rel="noopener nofollow" style="color: var(--main-color);">Политика конфиденциальности</a></div>
 
                         <div class="socials">
                             <a href="<?php the_field("vk", "option") ?>" target="_blank" rel="noopener nofollow" class="vkontakte_link">
@@ -41,6 +41,9 @@
 
                             <!--<a href="<?php the_field("fb", "option") ?>" target="_blank" rel="noopener nofollow" class="facebook_link">
                                 <svg class="icon"><use xlink:href="<?php echo get_template_directory_uri();?>/images/sprite.svg#ic_facebook"></use></svg>
+                            </a>
+                             <a href="" target="_blank" rel="noopener nofollow">
+                                
                             </a>
 
                             <a href="<?php the_field("inst", "option") ?>" target="_blank" rel="noopener nofollow" class="instagram_link">
