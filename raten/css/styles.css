@@ -474,7 +474,7 @@ header
 
 header .top
 {
-    background: var(--black_text);
+    background: var(--alice-blue);
 }
 
 
@@ -612,7 +612,7 @@ header .menu > * + *
 
 header .menu .btn
 {
-    color: #fff;
+    color: var(--black_text);
     font-size: 14px;
     line-height: 15px;
 

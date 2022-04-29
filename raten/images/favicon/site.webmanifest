@@ -1,6 +1,6 @@
 {
-    "name": "\u0420\u0435\u043c\u043e\u043d\u0442 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0439 \u0432 \u041c\u043e\u0441\u043a\u0432\u0435 \u0438 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u043f\u043e\u0434 \u043a\u043b\u044e\u0447",
-    "short_name": "\u0420\u0435\u043c\u043e\u043d\u0442 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0439 \u0432 \u041c\u043e\u0441\u043a\u0432\u0435 \u0438 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u043f\u043e\u0434 \u043a\u043b\u044e\u0447",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -14,5 +14,7 @@
         }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#ffffff"
+    "background_color": "#ffffff",
+    "start_url": "https://planremontamsk.ru/",
+    "display": "standalone"
 }
