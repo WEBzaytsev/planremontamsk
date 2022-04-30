@@ -107,9 +107,9 @@ Template Name: Главная
                     <input type="hidden" id="area_range" name="area_range" value="">
                 </div>
 
-                <div class="line duration">
+                <!-- <div class="line duration">
                     Срок работ <b>от 20 до 35 дней</b>
-                </div>
+                </div> -->
 
                 <div class="line row">
                     <div class="label">Введите<br >Ваш телефон</div>
