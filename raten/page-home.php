@@ -840,6 +840,18 @@ Template Name: Главная
 
     <img src="<?php echo get_template_directory_uri();?>/images/guarantees_bg_text.svg" alt="" class="lozad bg_text">
 </section>
+<section class="сertificate" id="certificate">
+    <div class="cont row">
+        <div class="image">
+            <img src="/wp-content/uploads/2022/05/diplom-luchshaya-kompaniya-1-scaled.jpg" alt="">
+        </div>
+
+        <div class="data">
+            <div class="block_title"><b>Лучшая</b><br> компания по ремонту квартир по версии Российского Строительного Олимпа</div>
+
+        </div>
+    </div>
+</section>
 
 
 <!-- <section class="team" id="team">
