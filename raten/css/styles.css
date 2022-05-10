@@ -613,7 +613,7 @@ header .menu > * + *
 header .menu .btn
 {
     color: var(--black_text);
-    font-size: 14px;
+    font-size: 12px;
     line-height: 15px;
 
     display: flex;

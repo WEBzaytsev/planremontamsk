@@ -73,7 +73,8 @@
 					<div class="top">
 						<div class="cont">
 							<nav class="menu row">
-								<button class="btn scroll_btn" data-anchor="#plan">План ремонта</button>
+                <button class="btn scroll_btn" data-anchor="#plan">План ремонта</button>
+								<button class="btn scroll_btn" data-anchor="#certificate">Лучшая компания</button>
 								<button class="btn scroll_btn" data-anchor="#quality_control">Контроль качества</button>
 								<button class="btn scroll_btn" data-anchor="#tariffs">Цена</button>
 								<button class="btn scroll_btn" data-anchor="#calc">Калькулятор</button>
@@ -90,7 +91,7 @@
 
 					<div class="info">
 						<div class="cont row">
-							<a href="<?php bloginfo('siteurl'); ?>" class="logo">
+							<a href="#certificate" class="logo">
 								<img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="">
 								<div>Лучшая компания по ремонту<br> квартир по версии<br> Российского Строительного Олимпа</div>
 							</a>
